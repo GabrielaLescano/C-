@@ -13,8 +13,15 @@ const bool DEF_TIENE_PERRO = false;
 const int DEF_OPC = -1;
 
 const int OPC_SALIR = 0;
-const int OPC_AGREGR_NOMBR = 1;
-const int OPC_MOSTRAR_NOMBR = 2;
+const int OPC_AGREGAR_NOMBRE = 1;
+const int OPC_MOSTRAR_NOMBRE = 2;
+const int OPC_AGREGAR_EDAD = 3;
+const int OPC_MOSTRAR_EDAD = 4;
+const int OPC_AGREGAR_DNI = 5;
+const int OPC_MOSTRAR_DNI = 6;
+const int OPC_AGREGAR_PERRO = 7;
+const int OPC_AGREGAR_GATO = 8;
+
 
 typedef struct persona{
 	int dni = DEF_DNI;
@@ -42,6 +49,19 @@ void opc_mostrar_nombre(persona_t persona);
 /* Pre: "opcion_eleg" correctamente actualizado
  * Post: realiza la "opcion_eleg" y retorna "persona"
 */
+
+int opc_agregar_edad();
+
+void opc_mostrar_edad(persona_t persona);
+
+int opc_agregar_dni();
+
+void opc_mostrar_dni(persona_t persona);
+
+bool opc_agregar_perro();
+
+bool opc_agregar_gato();
+
 persona_t ejecutar_opcion(int opcion_eleg, persona_t persona);
 
 /*pre:-.
