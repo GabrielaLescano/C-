@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
-- Crear un tipo de dato persona con atributos: dni, inicial_nombre, edad, si tiene gato, si tiene perro
+- Crear un tipo de dato persona con atributos: dni, edad, si tiene gato, si tiene perro
 	- Una vez creado el tipo de dato persona proceda a definirlo en la funcion main 
 	- Luego asignar valores ficticios a esta variable/struct de las siguientes maneras:
 		- Junto a la definicion
