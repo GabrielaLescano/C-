@@ -98,11 +98,11 @@ persona_t ejecutar_opcion(int opcion_eleg, persona_t persona){
 	return persona;
 }
 
-void iniciar_programa(){
+void iniciar_programa() {
 	int opcion = DEF_OPC;
 	persona_t alguien;
 	do{
 		opcion = mostrar_menu();
 		alguien = ejecutar_opcion(opcion, alguien);
-	}while(opcion != OPC_SALIR);
+	} while (opcion != OPC_SALIR);
 }
